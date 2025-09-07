@@ -32,19 +32,17 @@ class QaJobsPage(BasePage):
         time.sleep(5)
 
     def filterJobs(self):
-        time.sleep(5)
+        time.sleep(3)
         locationDropdown = self.waitElement(self.filterLocation_xpath)
         locationDropdown.click()
         locationTurkiye = self.waitElement(self.locationOption_xpath)
         locationTurkiye.click()
-        time.sleep(5)
+        time.sleep(3)
         departmentDropdown = self.waitElement(self.filterDepartment_xpath)
         departmentDropdown.click()
         departmentQA = self.waitElement(self.departmentOptions_xpath)
         departmentQA.click()
-        time.sleep(5)
-        
-        
+        time.sleep(3)
 
     def zoomOutPage(self):
         pageZoomOut = self.driver.execute_script("document.body.style.zoom='50%'")
